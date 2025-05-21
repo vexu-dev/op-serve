@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: op-pox-server
+    env: python
+    buildCommand: ""
+    startCommand: python proxy_server.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+    plan: free
