@@ -6,5 +6,5 @@ services:
     startCommand: gunicorn proxy_server:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10
+        value: 3.11
     plan: free
